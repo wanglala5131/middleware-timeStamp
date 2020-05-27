@@ -34,8 +34,7 @@ app.use('/', function (req, res, next) {
   res.on('finish', () => {
     const finish = new Date()
     const within = finish - startTime
-    //console.timeEnd(`${startTime.toLocaleString()} | ${ from} | total time`)
-    //console.log(`${start} | ${from} | total time: ${within}ms`)
+    console.log(`${start} | ${from} | total time: ${within}ms`)
   })
   next()
 })
